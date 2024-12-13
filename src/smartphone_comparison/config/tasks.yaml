@@ -1,0 +1,59 @@
+# research_task:
+#   description: >
+#     Conduct a thorough research about {topic}
+#     Make sure you find any interesting and relevant information given
+#     the current year is 2024.
+#   expected_output: >
+#     A list with 10 bullet points of the most relevant information about {topic}
+#   agent: researcher
+
+# reporting_task:
+#   description: >
+#     Review the context you got and expand each topic into a full section for a report.
+#     Make sure the report is detailed and contains any and all relevant information.
+#   expected_output: >
+#     A fully fledge reports with the mains topics, each with a full section of information.
+#     Formatted as markdown without '```'
+#   agent: reporting_analyst
+
+collect_specs_task:
+  description: >
+    Collect detailed specifications and features for the smartphones: {smartphones}.
+    Include key specifications like:
+    - Display (size, technology, resolution)
+    - Processor
+    - RAM and Storage options
+    - Camera specifications
+    - Battery capacity
+    - Special features
+  expected_output: >
+    A comprehensive list of specifications and features for each smartphone
+  agent: data_collector
+
+compare_phones_task:
+  description: >
+    Using the collected specifications, create a detailed comparison between {smartphones}.
+    Focus on:
+    - Key differentiating features
+    - Performance comparisons
+    - Camera capabilities
+    - Battery life expectations
+    - Build quality and design
+    - Unique selling points
+  expected_output: >
+    A detailed comparison highlighting the strengths and weaknesses of each smartphone
+  agent: comparison_analyst
+
+analyze_prices_task:
+  description: >
+    Analyze and compare the prices of {smartphones}.
+    Include:
+    - Current market prices
+    - Price variations across different storage options
+    - Regional price differences (if applicable)
+    - Value for money assessment
+    - Available deals or discounts
+    - Price history and trends
+  expected_output: >
+    A comprehensive price analysis and value assessment for each smartphone, formatted in markdown
+  agent: price_analyst

@@ -1,0 +1,23 @@
+[project]
+name = "smartphone_comparison"
+version = "0.1.0"
+description = "smartphone_comparison using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.80.0,<1.0.0",
+    "onnxruntime==1.15.0",
+    "socksio>=1.0.0",
+    "pyarrow==17.0.0",
+    ] 
+
+[project.scripts]
+smartphone_comparison = "smartphone_comparison.main:run"
+run_crew = "smartphone_comparison.main:run"
+train = "smartphone_comparison.main:train"
+replay = "smartphone_comparison.main:replay"
+test = "smartphone_comparison.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
