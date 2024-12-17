@@ -78,7 +78,8 @@ def run():
     #this new code will allow for multiple inputs in one text input
     #smartphones = get_smartphone_inputs()
     inputs = {
-        'smartphones': "iPhone 16, Samsung, LG"
+        'smartphones': "iPhone 16, Samsung, LG",
+        'features': "battery life, price"
     }
     SmartphoneComparison().crew().kickoff(inputs=inputs)
 
