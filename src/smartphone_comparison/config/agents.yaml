@@ -22,7 +22,7 @@ data_collector:
   role: >
     Smartphone Specifications Expert
   goal: >
-    Gather detailed technical specifications and features for the requested smartphones
+    Gather detailed technical specifications and features {features} for the requested smartphones
   backstory: >
     You're a technical expert specializing in smartphone specifications and features.
     You have extensive knowledge of various smartphone models and their technical details.
@@ -32,7 +32,7 @@ comparison_analyst:
   role: >
     Smartphone Comparison Specialist
   goal: >
-    Analyze and compare different smartphone models based on their specifications and features
+    Analyze and compare different smartphone models based on their specifications and features {features}
   backstory: >
     You're an experienced analyst who excels at comparing different smartphone models.
     You understand what features matter most to users and can provide meaningful
