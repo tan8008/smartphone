@@ -18,7 +18,7 @@
 
 collect_specs_task:
   description: >
-    Collect detailed specifications and features for the smartphones: {smartphones}.
+    Collect detailed specifications and features {features} for the smartphones: {smartphones}.
     Include key specifications like:
     - Display (size, technology, resolution)
     - Processor
@@ -27,7 +27,7 @@ collect_specs_task:
     - Battery capacity
     - Special features
   expected_output: >
-    A comprehensive list of specifications and features for each smartphone
+    A comprehensive list of specifications and features {features} for each smartphone
   agent: data_collector
 
 compare_phones_task:
